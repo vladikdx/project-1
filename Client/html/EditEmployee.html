@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Factory's Edit Employee</title>
+    <script>
+      if (sessionStorage.getItem("userID") == null) {
+        window.location.href = "/html/login.html";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <section class="head-container">
+        <div class="col-1">
+        <a href="/html/homepage.html"">
+          <img src="/images/logo-white.png" alt="logo" width="120px" />
+        </a>
+        </div>
+        <div class="col-2">
+          <span class="fullname"></span>
+          <input id="logout" type="button" value="logout" />
+        </div>
+      </section>
+    </header>
+    <section class="home-body">
+      <div class="body-container">
+          <aside class="sidebar">
+              <ul>
+                  <li><a href="/html/homepage.html">Home</a></li>
+                  <li><a href="/html/Employees.html">Employees</a></li>
+                  <li><a href="/html/Departments.html">Departments</a></li>
+                  <li><a href="/html/Shifts.html">Shifts</a></li>
+              </ul>
+          </aside>
+          <div class="content">
+            <div class="content-head">
+              <div class="titlebtn">
+              <h1 id="title">Edit Employee</h1>
+            </div>
+            </div>
+            <div class="content-main-edit">
+              <div class="form">
+              <label for="employeeFirstName">First Name</label>
+              <input id="employeeFirstName" type="text" />
+              <label for="employeeLastName">Last Name</label>
+              <input id="employeeLastName" type="text" />
+              <label for="startWorkYear">Starting working year</label>
+              <input id="startWorkYear" type="text" />
+              <label for="employeeDepertment">Select Department</label>
+              <select name="employeeDepertment" id="employeeDepertment">
+              </select>
+              </div>
+              <div>
+              <input id="saveBtn" type="button" value="Save" />
+            </div>
+            </div>
+           </div>
+      </div>
+  </section>
+    <script src="/js/EditEmployee.js"></script>
+  </body>
+</html>

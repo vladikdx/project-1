@@ -1,0 +1,16 @@
+$mainColor: #2f74eb;
+$inputColor: #eff5ff;
+$whiteColor: white;
+$titleColor: #16243e;
+$textColor: #666b74;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
